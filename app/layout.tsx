@@ -4,6 +4,7 @@ import './globals.css';
 import { ReactNode } from 'react';
 import { cn } from '@/lib/utils';
 import LightRays from '@/components/LightRays';
+import Navbar from '@/components/Navbar';
 
 const geist = Geist({ subsets: ['latin'], variable: '--font-sans' });
 
@@ -38,8 +39,11 @@ export default function RootLayout({
                 'font-sans',
                 geist.variable
             )}
+            style={{ scrollBehavior: 'smooth' }}
         >
             <body className='min-h-screen flex flex-col'>
+                <Navbar />
+
                 <div className={'absolute inset-0 top-0 z-[-1] min-h-screen'}>
                     <LightRays
                         raysOrigin='top-center-offset'
