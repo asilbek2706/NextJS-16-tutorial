@@ -10,9 +10,11 @@
   },
   "dependencies": {
     "class-variance-authority": "^0.7.1",
+    "cloudinary": "^2.10.0",
     "clsx": "^2.1.1",
     "lucide-react": "^1.14.0",
-    "next": "16.2.4",
+    "mongoose": "^9.6.1",
+    "next": "^16.2.4",
     "ogl": "^1.0.11",
     "posthog-js": "^1.372.6",
     "posthog-node": "^5.33.0",
